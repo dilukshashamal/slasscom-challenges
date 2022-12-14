@@ -23,13 +23,14 @@ public class challenge2 {
     }
 
     public static boolean checkParenthesis(String inPar){
+        
+//      get parenthesis
+        char getPare;
 
 //      create empty stack
         Stack st = new Stack();
 //      convert char array
         char[] inputArray = inPar.toCharArray();
-//      get parenthesis
-        char getPare;
 
 //      check input arrays and check closed parenthesis
         for(int i=0; i < inputArray.length; i++){
