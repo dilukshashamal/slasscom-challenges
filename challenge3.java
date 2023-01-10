@@ -4,6 +4,7 @@ public class challenge3 {
 
     public static void main(String[] arg){
         int[] array = {47,84,75,21,14,14,79};
+        int max=array[0];
         //sorted array
         //Arrays.sort(array);
 
@@ -22,6 +23,14 @@ public class challenge3 {
         System.out.println("Median :"+m1);
         System.out.println("Mean   :"+m2);
         System.out.println("Mode   :"+m3);
+
+        for(int i=1;i<l;i++){
+            if(array[i]>max)
+                max=array[i];
+        }
+
+        System.out.println("");
+        System.out.println("Highest Number: "+max);
 
         //find prime numbers
         System.out.println("");
